@@ -1,0 +1,28 @@
+TDD - Plan prezentacji
+
+1. Test Driven Development - Programowanie Sterowane Testami
+ - Co to jest?
+ - Dlaczego?
+ - Jak to zastosować?
+ - Zalety i wady.
+
+2. Co to jest: 
+
+Opis TDD i jego głównych reguł, przedstawienie historii powstania (pomysły Kenta Becka?). 
+
+3. Dlaczego:
+
+Co nam daje TDD i dlaczego warto inwestować czas i pieniądze w tworzenie i utrzymywanie kodu testowego
+
+4. Jak to stować:
+
+Opis faz Red-Green-Refactor. Opowiedzieć o frameworkach testowych i podstawowych technikach: mockowanie, tworzenie zaślepek, asercje różnego rodzaju, podział kodu na moduły dla większej testowalności. Przykłady na JUnit 4 + AssertJ + Java 8. 
+
+5. Demo na żywo:
+
+Pokazać jakiś interesujący przykład klasy, którą można ładnie przetestować i zaimplementować w podejściu TDD.
+
+6. Wady i zalety, podsumowanie:
+
+Zalety: czystszy kod, lepszy podział i mniejsze powiązania między obiektami, szybsza faza tworzenia i testowania aplikacji, szybki feedback dzięki temu, większa pewność co do powstałego kodu, siatka bezpieczeństwa.
+Wady: konieczność tworzenia dodatkowego kodu -> koszt i czas, możliwość zabetonowania implementacji, gdy testy są kiepsko napisane, tak samo sztuka pisania testów dla samego pisania, gdy nie ma wartości dodanej może stanowić wadę
