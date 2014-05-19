@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>TDD - Programowanie Sterowane Testami - SDI</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Prezentacja utworzona na Seminarium Dyplomowe Inżynierskie - tematyka TDD">
+		<meta name="author" content="Rafał Nowak">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,10 +15,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- moje style -->
 		<link rel="stylesheet" href="lib/css/tdd.css">
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -57,18 +59,93 @@
 				<section>
 					<h2>Agenda</h2>
 					<ol>
-						<li>TDD - co to jest?</li>
 						<li>Motywacja</li>
+						<li>TDD - co to jest?</li>
 						<li>Jak to zastosować?</li>
 						<li>Zalety i wady - podsumowanie</li>
 					</ol>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						<ul>
+							<li>Plan opowieści o TDD jest następujący: przedstawię motywację, która spowodowała, że taka metodyka w ogóle powstała.</li>
+							<li>Opowiem o samych testach automatycznych i przewagach nad testami manualnymi, do tego porównanie ich zalet i wad.</li>
+							<li>Następnie krótko przedstawię sposób w jaki można zastosować TDD.</li>
+							<li>W podsumowaniu opowiem o zaletach i wadach podejścia TDD.</li>
+						</ul>
 					</aside>
 				</section>
 
-				<!-- Example of nested vertical slides -->
+				<section>
+						<section>
+							<h2>Motywacja</h2>
+							<p>
+								Czyli dlaczego w ogóle warto zainteresować się testami automatycznymi i TDD w szczególności?
+							</p>
+							<aside class="notes">
+								Wstęp do motywacji stojącej za testami automatycznymi oraz TDD.
+							</aside>
+						</section>
+						<section>
+							<h2>Potrzeba testowania</h2>
+							<p>Dlaczego warto w aplikacji posiadać testy?</p>
+							<ul>
+								<li>Poziom złożoności oprogramowania jest coraz wyższy.</li>
+								<li>Aplikacje często składają się z wielu modułów i warstw.</li>
+								<li>Zmienny zespół pracujący nad projektem.</li>
+							</ul>
+							<aside class="notes">
+								<ul>
+									<li>Aplikacje stają się na tyle duże, że konieczne jest ich rozdzielanie na wiele modułów i warstw.</li>
+									<li>Nad każdym z takich modułów i ich warstw może pracować inny zespół.</li>
+									<li>Zespół taki co gorsza potrafi się zmienić w czasie trwania projektu.</li>
+									<li>A innym razem do projektu trzeba powrócić po dużym okresie bezczynności.</li>
+								</ul>
+							</aside>
+						</section>
+						<section>
+							<h2>Co zyskujemy dzięki testom?</h2>
+							<ul>
+								<li>Pewność, że klasy działają zgodnie z założeniami.</li>
+								<li>"Siatka bezpieczeństwa"</li>
+								<li>Specyfikacja działania.</li>
+							</ul>
+							<aside class="notes">
+								<ul>
+									<li>Testy powodują, że wiemy iż funkcjonalność, którą piszemy jest prawidłowa, gdyż testy przechodzą :)</li>
+									<li>Dodatkowo stanowią swoistą siatkę bezpieczeństwa dla dalszego refaktoringu i innych zmian w kodzie.</li>
+									<li>Co równie ważne, zestaw testów jednostkowych i integracyjnych może być traktowany jako specyfikacja pewnych funkcjonalności i tego jak działają.</li>
+								</ul>
+							</aside>
+						</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>A testy manualne?</h2>
+					</section>
+					<section>
+						<h2>Subtelne różnice</h2>
+						<ul>
+							<li>Pokazują, że błędy są na poziomie całej funkcjonalności.</li>
+							<li>Nie zawsze sprawdzają każdy warunek.</li>
+							<li>Wolniejsze.</li>
+							<li>Droższe.</li>
+						</ul>
+						<aside class="notes">
+							<ul>
+								<li>Testy manualne skupiają się na testowaniu całych funkcjonalności i ścieżek w aplikacji.</li>
+								<li>Nie testują konkretnych metod, działają na zasadzie białej skrzynki.</li>
+								<li>Czasem pewne warunki i dane wejściowe są pomijane - różne powody.</li>
+								<li>Dłuższy czas pomiędzy powstaniem kodu a wynikiem testów.</li>
+								<li>Efektywnie droższe w procesie niż tworzenie kodu testowego.</li>
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<h2>Piramida testów</h2>
+				</section>
+
 				<section>
 					<section>
 						<h2>TDD</h2>
@@ -80,16 +157,6 @@
 						<h2>Historia</h2>
 						<p>Kto i dlaczego (Kent Beck i inni).</p>
 					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
 				</section>
 
 				<section data-markdown>
@@ -109,22 +176,7 @@
 					</script>
 				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
+				<!-- <section id="themes">
 					<h2>Themes</h2>
 					<p>
 						Reveal.js comes with a few themes built in: <br>
@@ -142,7 +194,7 @@
 							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
 						</small>
 					</p>
-				</section>
+				</section> -->
 
 				<section>
 					<h2>Global State</h2>

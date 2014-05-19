@@ -6,17 +6,21 @@ TDD - Plan prezentacji
  - Jak to zastosować?
  - Zalety i wady.
 
-2. Co to jest: 
 
-Opis TDD i jego głównych reguł, przedstawienie historii powstania (pomysły Kenta Becka?). 
+2. Dlaczego:
 
-3. Dlaczego:
+Co nam daje TDD i dlaczego warto inwestować czas i pieniądze w tworzenie i utrzymywanie kodu testowego.
 
-Co nam daje TDD i dlaczego warto inwestować czas i pieniądze w tworzenie i utrzymywanie kodu testowego
+Motywacja:
+- testowanie aplikacji jest konieczne przez wzgląd na rosnącą złożoność i rozmiary aplikacji
+
+3. Co to jest:
+
+Opis TDD i jego głównych reguł, przedstawienie historii powstania (pomysły Kenta Becka?).
 
 4. Jak to stować:
 
-Opis faz Red-Green-Refactor. Opowiedzieć o frameworkach testowych i podstawowych technikach: mockowanie, tworzenie zaślepek, asercje różnego rodzaju, podział kodu na moduły dla większej testowalności. Przykłady na JUnit 4 + AssertJ + Java 8. 
+Opis faz Red-Green-Refactor. Opowiedzieć o frameworkach testowych i podstawowych technikach: mockowanie, tworzenie zaślepek, asercje różnego rodzaju, podział kodu na moduły dla większej testowalności. Przykłady na JUnit 4 + AssertJ + Java 8.
 
 5. Demo na żywo:
 
