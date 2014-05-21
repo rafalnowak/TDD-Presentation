@@ -88,7 +88,7 @@
 
 					<section>
 						<h2>Potrzeba testowania</h2>
-						<p>Dlaczego warto w aplikacji posiadać testy?</p>
+						<p>Dlaczego aplikacja powinna posiadać testy?</p>
 						<ul>
 							<li class="fragment">Poziom złożoności oprogramowania jest coraz wyższy.</li>
 							<li class="fragment">Aplikacje często składają się z wielu modułów i warstw.</li>
@@ -107,13 +107,14 @@
 					<section>
 						<h2>Co zyskujemy dzięki testom?</h2>
 						<ul>
-							<li class="fragment">Pewność, że klasy działają zgodnie z założeniami.</li>
+							<li class="fragment">Pewność, że kod działa zgodnie z założeniami.</li>
 							<li class="fragment">"Siatka bezpieczeństwa"</li>
 							<li class="fragment">Specyfikacja działania.</li>
 						</ul>
 						<aside class="notes">
 							<ul>
 								<li>Testy powodują, że wiemy iż funkcjonalność, którą piszemy jest prawidłowa, gdyż testy przechodzą :)</li>
+								<li>Zyskujemy dzięki nim większą pewność siebie.</li>
 								<li>Dodatkowo stanowią swoistą siatkę bezpieczeństwa dla dalszego refaktoringu i innych zmian w kodzie.</li>
 								<li>Co równie ważne, zestaw testów jednostkowych i integracyjnych może być traktowany jako specyfikacja pewnych funkcjonalności i tego jak działają.</li>
 							</ul>
@@ -127,10 +128,11 @@
 					</section>
 
 					<section>
-						<h2>Subtelne różnice</h2>
+						<h2>Różnice</h2>
 						<ul>
-							<li class="fragment">Pokazują, że błędy występują na poziomie całej funkcjonalności.</li>
+							<li class="fragment">Skupiają się na testach funkcjonalności.</li>
 							<li class="fragment">Nie zawsze sprawdzają każdy warunek.</li>
+							<li class="fragment">Często wykonywane w innym zespole.</li>
 							<li class="fragment">Wolniejsze.</li>
 							<li class="fragment">Droższe.</li>
 						</ul>
@@ -143,6 +145,10 @@
 								<li>Efektywnie droższe w procesie niż tworzenie kodu testowego.</li>
 						</aside>
 					</section>
+
+					<section>
+						<h3>Dlatego testy automatyczne</h3><h3>zyskują na popularności.</h3>
+					</section>
 				</section>
 
 				<section>
@@ -152,9 +158,9 @@
 				<section>
 					<section>
 						<h2>TDD</h2>
-						<p>Odmienne podejście</p>
+						<p>Czyli odmienne podejście</p>
 						<ul>
-							<li class="fragment">Najpierw testy</li>
+							<li class="fragment">Najpierw piszemy testy</li>
 							<li class="fragment">Potem kod</li>
 							<li class="fragment">Potem refaktoring</li>
 						</ul>
@@ -177,7 +183,8 @@
 						<aside class="notes">
 							<ul>
 								<li>Od początku związane z ruchem programowania ekstremalnego.</li>
-								<li>Opisane i odkryte na nowo przez Kenta Becka w jego słynnej książce.</li>
+								<li>Opisane i odkryte na nowo przez Kenta Becka w jego słynnej książce o danym tytule.</li>
+								<li>Od tej pory znajduje coraz szersze grono entuzjastów, chociaż nie każdy daje się przekonać.</li>
 						</aside>
 					</section>
 				</section>
@@ -185,18 +192,113 @@
 				<section>
 					<section>
 						<h2>Podstawowy cykl TDD</h2>
+
+						<aside class="notes">
+							Cykl TDD składa się z trzech podstawowych faz, które powtarzan są wielokrotnie podczas
+							procesu tworzenia aplikacji.
+						</aside>
 					</section>
 
-					<section data-background="#f83535">
+					<section data-background="#ff5a5a">
 						<h2>Red</h2>
 					</section>
 
-					<section data-background="#24c114">
+					<section data-background="#ff5a5a">
+							<h2>Opis fazy</h2>
+							<ul>
+								<li class="fragment">Utworzenie testów, które <strong>nie przechodzą</strong></li>
+								<li class="fragment">Nie warto pisać zbyt wielu "czerwonych" testów.</li>
+							</ul>
+
+							<aside class="notes">
+								<ul>
+									<li>Wystarczy utworzyć jeden test, który nie kończy się powodzeniem.</li>
+									<li>Czerwony, ponieważ tak pokazuje IDE :)</li>
+									<li>Nie warto tworzyć zbyt wielu takich testów, aby cykl był krótki.</li>
+								</ul>
+							</aside>
+					</section>
+
+					<section data-background="#ff5a5a">
+						<h2>Co zyskujemy?</h2>
+						<ul>
+							<li class="fragment">Gotowa specyfikacja.</li>
+							<li class="fragment">Skupienie się na projektowanym kodzie.</li>
+							<li class="fragment">Chwila na pomyślenie nad dalszym kierunkiem.</li>
+						</ul>
+
+						<aside class="notes">
+							<ul>
+								<li>Test stanowi opis działania pewnej funkcjonalności.</li>
+								<li>Pisząc test jako pierwszy skupiamy się na architekturze kodu.</li>
+								<li>Dzięki temu jest czas na refleksę nad dalszą droga rozwoju funkcjonalności.</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-background="#5aff5a">
 						<h2>Green</h2>
+					</section>
+
+					<section data-background="#5aff5a">
+						<h2>Opis fazy</h2>
+						<ul>
+							<li class="fragment">Właściwy etap kodowania.</li>
+							<li class="fragment">Tworzymy tylko tyle kodu, aby test się udał.</li>
+							<li class="fragment">I nic więcej!</li>
+						</ul>
+
+						<aside class="notes">
+							<ul>
+								<li>Tutaj następuje całe programowanie funkcjonalności do testów.</li>
+								<li>Nie można tworzyć więcej kodu niż powinniśmy, aby test przechodził.</li>
+								<li>Wystarczy minimalna ilość kodu aby test był zielony.</li>
+								<li>Refaktoring zostawiamy na potem.</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-background="#5aff5a">
+						<h2>Efekt</h2>
+						<ul>
+							<li class="fragment">Nowa funkcjonalność zaczyna działać.</li>
+							<li class="fragment">Nie zepsuliśmy nic z dotychczasowego kodu.</li>
+						</ul>
+
+						<aside class="notes">
+							<ul>
+								<li>Przechodzący test świadczy o tym, że to co napisaliśmy działa i jest poprawne.</li>
+								<li>Uruchamiając cały zestaw testów zyskujemy pewność, że nic nie zepsuliśmy.</li>
+								<li>Dlatego ważne jest aby testy były krótkie!</li>
+							</ul>
+						</aside>
 					</section>
 
 					<section>
 						<h2>Refactor</h2>
+					</section>
+
+					<section>
+						<h2>Czyli poprawianie nowego kodu</h2>
+					</section>
+
+					<section>
+						<h2>Cele</h2>
+						<ul>
+							<li class="fragment">Usunięcie duplikacji.</li>
+							<li class="fragment">Reużywalność kodu.</li>
+							<li class="fragment">Osiągnięcie elegancji rozwiązania.</li>
+							<li class="fragment">Zmiana struktury metod i klas.</li>
+						</ul>
+
+						<aside class="notes">
+							<ul>
+								<li>Wg praw TDD Kenta Becka nr 1 to usunięcie duplikacji.</li>
+								<li>Staramy się, aby nowy kod był maksymalnie reużywalny.</li>
+								<li>Dodatkowo dążymy do osiągnięcia elegancji rozwiązania.</li>
+								<li>Często pociąga za sobą zmiany w strukturze kodu.</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 
