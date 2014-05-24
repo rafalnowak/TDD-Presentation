@@ -67,10 +67,10 @@
 
 					<aside class="notes">
 						<ul>
-							<li>Plan opowieści o TDD jest następujący: przedstawię motywację, która spowodowała, że taka metodyka w ogóle powstała.</li>
-							<li>Opowiem o samych testach automatycznych i przewagach nad testami manualnymi, do tego porównanie ich zalet i wad.</li>
-							<li>Następnie krótko przedstawię sposób w jaki można zastosować TDD.</li>
-							<li>W podsumowaniu opowiem o zaletach i wadach podejścia TDD.</li>
+							<li>Plan opowieści o TDD jest następujący: przedstawię motywację, która spowodowała, że taka metodyka w ogóle powstała</li>
+							<li>Opowiem o samych testach automatycznych i przewagach nad testami manualnymi, do tego porównanie ich zalet i wad</li>
+							<li>Następnie krótko przedstawię sposób w jaki można zastosować TDD</li>
+							<li>W podsumowaniu opowiem o zaletach i wadach podejścia TDD</li>
 						</ul>
 					</aside>
 				</section>
@@ -90,16 +90,16 @@
 						<h2>Potrzeba testowania</h2>
 						<p>Dlaczego aplikacja powinna posiadać testy?</p>
 						<ul>
-							<li class="fragment">Poziom złożoności oprogramowania jest coraz wyższy.</li>
-							<li class="fragment">Aplikacje często składają się z wielu modułów i warstw.</li>
-							<li class="fragment">Zmienny zespół pracujący nad projektem.</li>
+							<li class="fragment">Poziom złożoności oprogramowania jest coraz wyższy</li>
+							<li class="fragment">Aplikacje często składają się z wielu modułów i warstw</li>
+							<li class="fragment">Zmienny zespół pracujący nad projektem</li>
 						</ul>
 						<aside class="notes">
 							<ul>
-								<li>Aplikacje stają się na tyle duże, że konieczne jest ich rozdzielanie na wiele modułów i warstw.</li>
-								<li>Nad każdym z takich modułów i ich warstw może pracować inny zespół.</li>
-								<li>Zespół taki co gorsza potrafi się zmienić w czasie trwania projektu.</li>
-								<li>A innym razem do projektu trzeba powrócić po dużym okresie bezczynności.</li>
+								<li>Aplikacje stają się na tyle duże, że konieczne jest ich rozdzielanie na wiele modułów i warstw</li>
+								<li>Nad każdym z takich modułów i ich warstw może pracować inny zespół</li>
+								<li>Zespół taki co gorsza potrafi się zmienić w czasie trwania projektu</li>
+								<li>A innym razem do projektu trzeba powrócić po dużym okresie bezczynności</li>
 							</ul>
 						</aside>
 					</section>
@@ -107,9 +107,9 @@
 					<section>
 						<h2>Co zyskujemy dzięki testom?</h2>
 						<ul>
-							<li class="fragment">Pewność, że kod działa zgodnie z założeniami.</li>
+							<li class="fragment">Pewność, że kod działa zgodnie z założeniami</li>
 							<li class="fragment">"Siatka bezpieczeństwa"</li>
-							<li class="fragment">Specyfikacja działania.</li>
+							<li class="fragment">Specyfikacja działania</li>
 						</ul>
 						<aside class="notes">
 							<ul>
@@ -130,11 +130,11 @@
 					<section>
 						<h2>Różnice</h2>
 						<ul>
-							<li class="fragment">Skupiają się na testach funkcjonalności.</li>
-							<li class="fragment">Nie zawsze sprawdzają każdy warunek.</li>
-							<li class="fragment">Często wykonywane w innym zespole.</li>
-							<li class="fragment">Wolniejsze.</li>
-							<li class="fragment">Droższe.</li>
+							<li class="fragment">Skupiają się na testach funkcjonalności</li>
+							<li class="fragment">Nie zawsze sprawdzają każdy warunek</li>
+							<li class="fragment">Często wykonywane w innym zespole</li>
+							<li class="fragment">Wolniejsze</li>
+							<li class="fragment">Droższe</li>
 						</ul>
 						<aside class="notes">
 							<ul>
@@ -152,7 +152,15 @@
 				</section>
 
 				<section>
-					<h2>Piramida testów</h2>
+					<section>
+						<h2>Piramida testów</h2>
+						<img style="border:none; background:none; box-shadow:none;" src="lib/img/testpyramid.png" alt="pyramid" />
+					</section>
+
+					<section>
+						<h2>Odwrócona piramida</h2>
+						<img width="500" height="630" style="border:none; background:none; box-shadow:none;" src="lib/img/cone.png" alt="cone" />
+					</section>
 				</section>
 
 				<section>
@@ -160,9 +168,9 @@
 						<h2>TDD</h2>
 						<p>Czyli odmienne podejście</p>
 						<ul>
-							<li class="fragment">Najpierw piszemy testy</li>
-							<li class="fragment">Potem kod</li>
-							<li class="fragment">Potem refaktoring</li>
+							<li class="fragment">Najpierw powstaje test</li>
+							<li class="fragment">Następnie powstaje kod</li>
+							<li class="fragment">Na końcu następuje refaktoring</li>
 						</ul>
 						<aside class="notes">
 							<ul>
@@ -204,7 +212,7 @@
 					<section>
 						<h2>2.</h2>
 						<blockquote>
-							Należy stworzyć tylko takie przypadki testowe, które wystarczają, aby kończyły się niepowodzeniem.
+							Nie należy pisać więcej testów niż jest to konieczne, aby któryś kończył się porażką.
 						</blockquote>
 					</section>
 
@@ -238,7 +246,7 @@
 							<h2>Opis fazy</h2>
 							<ul>
 								<li class="fragment">Utworzenie testów, które <strong>nie przechodzą</strong></li>
-								<li class="fragment">Nie warto pisać zbyt wielu "czerwonych" testów.</li>
+								<li class="fragment">Nie warto pisać zbyt wielu "czerwonych" testów</li>
 							</ul>
 
 							<aside class="notes">
@@ -253,9 +261,9 @@
 					<section data-background="#ff5a5a">
 						<h2>Co zyskujemy?</h2>
 						<ul>
-							<li class="fragment">Gotowa specyfikacja.</li>
-							<li class="fragment">Skupienie się na projektowanym kodzie.</li>
-							<li class="fragment">Chwila na pomyślenie nad dalszym kierunkiem.</li>
+							<li class="fragment">Gotowa specyfikacja</li>
+							<li class="fragment">Skupienie się na projektowanym kodzie</li>
+							<li class="fragment">Chwila na pomyślenie nad dalszym kierunkiem</li>
 						</ul>
 
 						<aside class="notes">
@@ -274,8 +282,8 @@
 					<section data-background="#5aff5a">
 						<h2>Opis fazy</h2>
 						<ul>
-							<li class="fragment">Właściwy etap kodowania.</li>
-							<li class="fragment">Tworzymy tylko tyle kodu, aby test się udał.</li>
+							<li class="fragment">Właściwy etap kodowania</li>
+							<li class="fragment">Tworzymy tylko tyle kodu, aby test się udał</li>
 							<li class="fragment">I nic więcej!</li>
 						</ul>
 
@@ -292,8 +300,8 @@
 					<section data-background="#5aff5a">
 						<h2>Efekt</h2>
 						<ul>
-							<li class="fragment">Nowa funkcjonalność zaczyna działać.</li>
-							<li class="fragment">Nie zepsuliśmy nic z dotychczasowego kodu.</li>
+							<li class="fragment">Nowa funkcjonalność zaczyna działać</li>
+							<li class="fragment">Nie zepsuto nic z dotychczasowego kodu</li>
 						</ul>
 
 						<aside class="notes">
@@ -316,10 +324,10 @@
 					<section>
 						<h2>Cele</h2>
 						<ul>
-							<li class="fragment">Usunięcie duplikacji.</li>
-							<li class="fragment">Reużywalność kodu.</li>
-							<li class="fragment">Osiągnięcie elegancji rozwiązania.</li>
-							<li class="fragment">Zmiana struktury metod i klas.</li>
+							<li class="fragment">Usunięcie duplikacji</li>
+							<li class="fragment">Reużywalność kodu</li>
+							<li class="fragment">Osiągnięcie elegancji rozwiązania</li>
+							<li class="fragment">Zmiana struktury metod i klas</li>
 						</ul>
 
 						<aside class="notes">
@@ -335,20 +343,14 @@
 
 				<section>
 					<h2>Cykl TDD jest powtarzany wielokrotnie!</h2>
+
+					<aside class="notes">
+						Warto nadmienić, iż cały cykl powinien być bardzo krótki, dzięki współczesnym narzedziom wynosi wręcz
+						kilka minut. Dobrze napisany test jednostkowy uruchamai się milisekundy.
+					</aside>
 				</section>
 
 	<!--
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
 
 				<section>
 					<h2>Pretty Code</h2>
@@ -402,13 +404,6 @@ function linkify( selector ) {
 				</section> -->
 
 				<!-- <section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section> -->
-
-				<!-- <section>
 					<h2>Export to PDF</h2>
 					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
 					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
@@ -425,15 +420,19 @@ function linkify( selector ) {
 					<section>
 						<h3>Kent Beck</h3>
 						<h3>Test Driven Development: By Example</h3>
+						<img width="260" height="325" src="lib/img/kentbeck.jpeg" alt="beck" />
 					</section>
 
 					<section>
 						<h3>Robert C. Martin</h3>
 						<h3>Clean Code</h3>
+						<img width="260" height="325" src="lib/img/cleancode.jpeg" alt="cleancode" />
+					</section>
 
 					<section>
 						<h3>Vincent Massol</h3>
 						<h3>JUnit in Action</h3>
+						<img width="260" height="325" src="lib/img/junit.jpg" alt="cleancode" />
 					</section>
 
 					<section>
@@ -443,7 +442,7 @@ function linkify( selector ) {
 				</section>
 
 				<section>
-					<h1>KONIEC</h1>
+					<h1>Dziękuję za uwagę</h1>
 					<h3>Rafał Nowak / <a href="http://rnowak.info">rnowak.info</a> </h3>
 					<p><a href="http://rafalnowak.github.io/TDD-Presentation">http://rafalnowak.github.io/TDD-Presentation</a></p>
 				</section>
