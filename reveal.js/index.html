@@ -373,46 +373,60 @@ function linkify( selector ) {
 }
 					</code></pre>
 					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+				-->
+
 
 				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
+					<section>
+						<h2>Zalety i wady</h2>
 						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
+							<ul>
+								<li>Nie jest to krystalicznie czyste rozwiązanie</li>
+								<li>Wzbudza dużo kontrowersji</li>
+								<li>Wymaga nowego sposobu myślenia</li>
+							</ul>
 						</aside>
 					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
-					</section>
-				</section> -->
 
-				<!-- <section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section> -->
+					<section>
+						<h2>Zalety</h2>
+						<ul>
+							<li class="fragment">Szybka informacja zwrotna</li>
+							<li class="fragment">Wysokie pokrycie testami</li>
+							<li class="fragment">Niemal gotowa specyfikacja</li>
+							<li class="fragment">Pewność siebie i kodu</li>
+							<li class="fragment">Przemyślane i luźno powiązane klasy</li>
+						</ul>
+						<aside class="notes">
+							<ul>
+								<li>Cykl TDD jest bardzo krótki dlatego informacja o działaniu lub nie jest bardzo szybka</li>
+								<li>Dzięki TDD prawie cały powstały kod jest od razu pokryty testami, dzięki czemu poziom tego pokrycia jest wysoki</li>
+								<li>Działające przypadki testowe stanowią częśc specyfikacji systemu</li>
+								<li>Najważniejsze jest to, że TDD zwiększa pewność siebie i powstałego kodu, dzięki temu wiadomo, że on działa</li>
+								<li>Projekt klas i ich powiązań jest dużo bardziej elegancki, gdyż testy niejako to wymuszają.</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Wady</h2>
+						<ul>
+							<li class="fragment">Wymaga zupełnie nowego podejścia</li>
+							<li class="fragment">Wyższe początkowe koszty</li>
+							<li class="fragment">Ryzyko "zabetonowania" kodu</li>
+							<li class="fragment">Możliwy kod niskiej jakości</li>
+						</ul>
+						<aside class="notes">
+							<ul>
+								<li>TDD to zupełnie nowy sposób myślenia i kodzenia, wymaga przestawienia swojego umysłu na nowe tory.</li>
+								<li>Koszty TDD mogą być z początku wysokie, ponieważ wymagane jest utworzenie testów jako pierwszych i może minąć wiele cykli, zanim powstanie pełnoprawny kod produkcyjny</li>
+								<li>Jeśli testy zbyt mocno polegają na węwnetrznej implementacji klas, istnieje możliwość zabetonowania ich kodu, czyli napisania testów, które nie pozwalają na żadne zmiany i refaktoring</li>
+								<li>Tak samo zbyt duży "overengineering" kodu może spowodować powstanie kodu, który będzie miał za dużo warstw abstrakcji i interfejsów, co ostatecznie zaciemnia cały projekt.</li>
+							</ul>
+						</aside>
+					</section>
+
+				</section>
 
 				<section>
 					<section>
@@ -448,6 +462,15 @@ function linkify( selector ) {
 					<h3>Rafał Nowak / <a href="http://rnowak.info">rnowak.info</a> </h3>
 					<p><a href="http://rafalnowak.github.io/TDD-Presentation">http://rafalnowak.github.io/TDD-Presentation</a></p>
 				</section>
+
+				<!-- <section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
+					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
+					<script>
+						document.getElementById('slideshare').attributeName = 'allowfullscreen';
+					</script>
+				</section> -->
 
 			</div>
 
