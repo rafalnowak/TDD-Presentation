@@ -88,11 +88,15 @@
 
 					<section>
 						<h2>Potrzeba testowania</h2>
-						<p>Dlaczego aplikacja powinna posiadać testy?</p>
+						<p>Dlaczego aplikacja powinna posiadać testy automatyczne?</p>
 						<ul>
 							<li class="fragment">Poziom złożoności oprogramowania jest coraz wyższy</li>
+							<ul>
+									<li class="fragment">Kilkaset albo nawet kilka milionów linii kodu</li>
+							</ul>
 							<li class="fragment">Aplikacje często składają się z wielu modułów i warstw</li>
 							<li class="fragment">Zmienny zespół pracujący nad projektem</li>
+							<li class="fragment">Projekty utrzymaniowe</li>
 						</ul>
 						<aside class="notes">
 							<ul>
@@ -108,15 +112,15 @@
 						<h2>Co zyskujemy dzięki testom?</h2>
 						<ul>
 							<li class="fragment">Pewność, że kod działa zgodnie z założeniami</li>
-							<li class="fragment">"Siatka bezpieczeństwa"</li>
 							<li class="fragment">Specyfikacja działania</li>
+							<li class="fragment">"Siatka bezpieczeństwa"</li>
 						</ul>
 						<aside class="notes">
 							<ul>
 								<li>Testy powodują, że wiemy iż funkcjonalność, którą piszemy jest prawidłowa, gdyż testy przechodzą :)</li>
+								<li>Co równie ważne, zestaw testów jednostkowych i integracyjnych może być traktowany jako specyfikacja pewnych funkcjonalności i tego jak działają.</li>
 								<li>Zyskujemy dzięki nim większą pewność siebie.</li>
 								<li>Dodatkowo stanowią swoistą siatkę bezpieczeństwa dla dalszego refaktoringu i innych zmian w kodzie.</li>
-								<li>Co równie ważne, zestaw testów jednostkowych i integracyjnych może być traktowany jako specyfikacja pewnych funkcjonalności i tego jak działają.</li>
 							</ul>
 						</aside>
 					</section>
@@ -257,7 +261,9 @@
 							procesu tworzenia aplikacji.
 						</aside>
 					</section>
+				</section>
 
+				<section>
 					<section data-background="#ff5a5a">
 						<h2>Red</h2>
 						<img style="border:none; background:none; box-shadow:none;" src="lib/img/redtest.png" alt="redtest" />
@@ -295,7 +301,9 @@
 							</ul>
 						</aside>
 					</section>
+				</section>
 
+				<section>
 					<section data-background="#5aff5a">
 						<h2>Green</h2>
 						<img style="border:none; background:none; box-shadow:none;" src="lib/img/greentest.png" alt="greentest" />
@@ -334,7 +342,9 @@
 							</ul>
 						</aside>
 					</section>
+				</section>
 
+				<section>
 					<section>
 						<h2>Refactor</h2>
 					</section>
